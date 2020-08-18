@@ -8,20 +8,17 @@
       <img alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
     </div>
     <div class="bar">
-      <input class="searchbar" type="text" title="Search">
+      <input class="searchbar" id="Blah" type="text" title="Search">
       <a href="#"> 
     </div>
     <div class="buttons">
-      <button class="button" type="button">Google Search</button>
+      <button class="button" type="button" onclick="search()">Google Search</button>
       <!-- <button class="button" type="button">I'm Feeling Lucky</button> -->
      </div>
-
-     <textarea id="Blah"></textarea>
-     <button onclick="search()">Search</button>
-                <script>
-                function search() {
-                var Blah = document.getElementById("Blah").value;
-                location.replace("https://www.google.com/search?q=" + Blah + "");
-                }
-                </script>
+        <script>
+        function search() {
+        var Blah = document.getElementById("Blah").value;
+        location.replace("https://www.google.com/search?q=" + Blah + "");
+        }
+        </script>
   </body>
